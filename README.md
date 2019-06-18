@@ -54,11 +54,11 @@ Using Maven:
 
 Using Gradle:
 
-    gradlew -Dcucumber.options="..." test
+    ./gradlew -Dcucumber.options="--tags @cukes" test --info
 
 Let's look at some things you can do with `cucumber.options`. Try this:
 
-    -Dcucumber.options="--help"
+    ./gradlew -Dcucumber.options="--help"
 
 That should list all the available options.
 
@@ -95,4 +95,4 @@ This works as long as you have the `rerun` formatter enabled.
 
 For example a JUnit formatter:
 
-    -Dcucumber.options="--plugin junit:target/cucumber-junit-report.xml"
+    ./gradlew -Dcucumber.options="--plugin junit:target/cucumber-junit-report.xml"

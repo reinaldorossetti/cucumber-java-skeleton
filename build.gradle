@@ -7,6 +7,7 @@ project.ext {
 dependencies {
     testCompile 'io.cucumber:cucumber-java:' + cucumberVersion
     testCompile 'io.cucumber:cucumber-junit:' + cucumberVersion
+    compile group: 'io.appium', name: 'java-client', version: '6.1.0'
 }
 
 repositories {
