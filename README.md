@@ -24,6 +24,10 @@ Or simply [download a zip](https://github.com/cucumber/cucumber-java-skeleton/ar
 
 ## Use Maven
 
+MACOS - Run following command on Terminal
+    $ brew update
+    $ brew install maven
+
 Open a command window and run:
 
     mvn test
