@@ -1,10 +1,22 @@
 package io.cucumber.skeleton;
 
+import cucumber.api.Scenario;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+
 public class Stepdefs {
+
+    @Before
+    public void doSomethingBefore(Scenario scenario) {
+        String CT = scenario.getSourceTagNames().iterator().next();
+        System.out.println("TEST CN: " + CT);
+        String cwd = System.getProperty("user.dir");
+        System.out.println("Current working directory : " + cwd);
+    }
+
     @Given("^I have (\\d+) cukes in my belly$")
     public void I_have_cukes_in_my_belly(int cukes) throws Throwable {
         Belly belly = new Belly();
