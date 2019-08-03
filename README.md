@@ -20,8 +20,6 @@ Subversion:
     svn checkout https://github.com/cucumber/cucumber-java-skeleton/trunk cucumber-java-skeleton
     cd cucumber-java-skeleton
 
-Or simply [download a zip](https://github.com/cucumber/cucumber-java-skeleton/archive/master.zip) file.
-
 ## Use Maven
 
 MACOS - Run following command on Terminal
