@@ -6,7 +6,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.cucumber.skeleton.Belly;
-import io.cucumber.skeleton.ReaderCSV;
+import io.cucumber.skeleton.suport.ReaderCSV;
 
 import java.util.ArrayList;
 
@@ -29,7 +29,7 @@ public class StepdefsX {
     @Given("I have X cukes in my belly")
     public void I_have_cukes_in_my_belly() throws Throwable {
         Belly belly = new Belly();
-        belly.eat(Integer.parseInt(result.get(1)));
+        belly.eat(Integer.parseInt(result.get(1).trim()));
     }
 
     @When("I wait X hour")
