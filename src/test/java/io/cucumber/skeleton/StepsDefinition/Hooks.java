@@ -12,12 +12,12 @@ public class Hooks {
     int value = rand.nextInt(50);
 
     @Before
-    public void beforeClass() throws Exception {
-        System.out.println("Inside Before"+value + "\n");
+    public void beforeScenario() throws Exception {
+        System.out.println("Before Scenario"+value + "\n");
     }
 
     @After
-    public void afterClass() throws InterruptedException, IOException {
-        System.out.println("Inside After"+value + "\n");
+    public void afterScenario() throws InterruptedException, IOException {
+        System.out.println("After Scenario"+value + "\n");
     }
 }
