@@ -12,7 +12,7 @@ There is a single feature file with one scenario. The scenario has three steps, 
 Keywords
 Each line that isn’t a blank line has to start with a Gherkin keyword, followed by any text you like. The only exceptions are the feature and scenario descriptions.
 
-The primary keywords are:
+####The primary keywords are:
 
 Feature  
 Rule (as of Gherkin 6)  
@@ -21,15 +21,15 @@ Given, When, Then, And, But (steps)
 Background  
 Scenario Outline (or Scenario Template)  
 Examples  
-There are a few secondary keywords as well:  
 
+####There are a few secondary keywords as well:  
 """ (Doc Strings)  
 | (Data Tables)  
 @ (Tags)  
 \# (Comments)  
 
 
-Tag Expressions are boolean expressions of tags with the logical operators and, or and not.
+####Tag Expressions are boolean expressions of tags with the logical operators and, or and not.
 
 Migrating from old style tags
 --tags @dev  //=> stays the same  
@@ -170,4 +170,4 @@ Our project structure is now as follows:
 https://github.com/cucumber/cucumber/tree/master/tag-expressions
 https://cucumber.io/docs/gherkin/reference/
 https://github.com/allure-framework/allure-maven  
-https://medium.com/\@mlvandijk/getting-started-with-cucumber-in-java-a-10-minute-tutorial-586652d2c82
+https://medium.com/@mlvandijk/getting-started-with-cucumber-in-java-a-10-minute-tutorial-586652d2c82
