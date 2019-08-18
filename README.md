@@ -8,6 +8,37 @@ to install and run Cucumber!
 
 There is a single feature file with one scenario. The scenario has three steps, two of them pending. See if you can make them all pass!
 
+## Rules
+Keywords
+Each line that isn’t a blank line has to start with a Gherkin keyword, followed by any text you like. The only exceptions are the feature and scenario descriptions.
+
+The primary keywords are:
+
+Feature  
+Rule (as of Gherkin 6)  
+Example (or Scenario)  
+Given, When, Then, And, But (steps)  
+Background  
+Scenario Outline (or Scenario Template)  
+Examples  
+There are a few secondary keywords as well:  
+
+""" (Doc Strings)  
+| (Data Tables)  
+@ (Tags)  
+\# (Comments)  
+
+
+Tag Expressions are boolean expressions of tags with the logical operators and, or and not.
+
+Migrating from old style tags
+--tags @dev  //=> stays the same  
+--tags ~@dev //=> becomes --tags 'not @dev'  
+--tags @foo,@bar //=> becomes --tags '@foo or @bar'  
+--tags @foo --tags @bar //=> becomes --tags '@foo and bar'  
+--tags ~@foo --tags @bar,@zap //=> becomes --tags 'not @foo and (@bar or @zap)'  
+
+
 ## Get the code
 
 Git:
@@ -54,11 +85,11 @@ Sometimes it can be useful to override these options without changing or recompi
 
 Using Maven:
 
-    mvn -Dcucumber.options="..." test
+    mvn -Dcucumber.options="--tags @cukesY and @cukesX" test
 
 Using Gradle:
 
-    ./gradlew -Dcucumber.options="--tags @cukes" test --info
+    ./gradlew -Dcucumber.options="--tags @cukesY and @cukesX" test --info
 
 Let's look at some things you can do with `cucumber.options`. Try this:
 
@@ -87,7 +118,7 @@ You can also specify files to run by filesystem path:
 
 You can also specify what to run by *tag*:
 
-    -Dcucumber.options="--tags @bar --plugin pretty"
+    -Dcucumber.options="--tags @cukesY and @cukesX --plugin pretty"
 
 ### Running only the scenarios that failed in the previous run
 
@@ -100,3 +131,43 @@ This works as long as you have the `rerun` formatter enabled.
 For example a JUnit formatter:
 
     ./gradlew -Dcucumber.options="--plugin junit:target/cucumber-junit-report.xml"
+
+
+## Use Maven + Allure
+
+run your tests
+```
+mvn clean test  
+```
+You can generate a report using one of the following command:
+```
+mvn allure:serve  
+```
+Report will be generated into temp folder. Web server with results will start.
+```
+mvn allure:report
+```
+Report will be generated tо directory: target/site/allure-maven/index.htm
+
+## Project Structure
+````text
+Our project structure is now as follows:  
+├── pom.xml             (containing Cucumber and JUnit dependencies)
+└── src (java root path project)
+    ├── main (project code)
+    │   └── java        (marked as java sources root)
+    │   └── resources   (marked as java resources root)
+    └── test (project test)
+        ├── java        (marked as test sources root)
+        └── resources   (marked as test resources root)
+                └── <project> (project name io.cucumber.skeleton)
+                       └── belly.feature
+                └── allure.properties
+````
+
+## References:  
+
+https://github.com/cucumber/cucumber/tree/master/tag-expressions
+https://cucumber.io/docs/gherkin/reference/
+https://github.com/allure-framework/allure-maven  
+https://medium.com/\@mlvandijk/getting-started-with-cucumber-in-java-a-10-minute-tutorial-586652d2c82
