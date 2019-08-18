@@ -31,7 +31,7 @@ Examples
 
 #### Tag Expressions are boolean expressions of tags with the logical operators and, or and not.
 
-Migrating from old style tags
+Migrating from old style tags  
 --tags @dev  //=> stays the same  
 --tags ~@dev //=> becomes --tags 'not @dev'  
 --tags @foo,@bar //=> becomes --tags '@foo or @bar'  
