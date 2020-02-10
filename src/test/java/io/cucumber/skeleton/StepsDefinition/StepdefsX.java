@@ -24,6 +24,7 @@ public class StepdefsX {
         String csv_path = (cwd + "\\data_mass\\data_mass_scenarioX.csv");
         ReaderCSV csv_file = new ReaderCSV();
         result = csv_file.oneByOne(csv_path, CT);
+        System.out.println(result);
     }
 
     @Given("I have X cukes in my belly")

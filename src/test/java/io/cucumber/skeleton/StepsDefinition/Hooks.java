@@ -23,7 +23,7 @@ public class Hooks {
     @After
     public void afterScenario(Scenario scenario) throws InterruptedException, IOException {
         result = test.addItem(scenario.getSourceTagNames().iterator().next(), scenario.getStatus());
-        System.out.println("After Scenario " + result + "\n");
+        System.out.println("After Scenario Show Results: " + result + "\n");
     }
 
 }

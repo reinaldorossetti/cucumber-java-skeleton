@@ -35,7 +35,7 @@ public class BaseClassStep implements ConcurrentEventListener {
     };
 
     private void beforeAll() {
-        System.out.println("in before all 2");
+        System.out.println("in before all");
     }
 
     private EventHandler<TestRunFinished> teardown = event -> {
@@ -43,6 +43,6 @@ public class BaseClassStep implements ConcurrentEventListener {
     };
 
     private void afterAll() {
-        System.out.println("in after all 2");
+        System.out.println("in after all");
     }
 }
