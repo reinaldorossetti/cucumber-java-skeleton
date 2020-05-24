@@ -11,7 +11,7 @@ import java.util.Date;
 public class Hooks {
 
     BaseClassStep test = new BaseClassStep();
-    private static String ultimoStep="";
+    private static String currentStep="";
 
     @AfterStep
     public void afterStep() {
@@ -20,8 +20,8 @@ public class Hooks {
 
     @BeforeStep
     public void beforeStep() {
-        ultimoStep = test.getStepText();
-        System.out.println("Step Armazenado Print: " + ultimoStep);
+        currentStep = test.getStepText();
+        System.out.println("Step Armazenado Print: " + currentStep);
     }
 
     @After
@@ -29,7 +29,7 @@ public class Hooks {
         String scenarioName = scenario.getName();
         System.out.println("After Scenario:");
         System.out.println("Imagem_CenarioName=" + String.valueOf(scenarioName).replaceAll("[^a-zA-Z0-9]", "_")
-                + "_StepName=" + String.valueOf(ultimoStep).replaceAll("[^a-zA-Z0-9]", "_") + "_" +
+                + "_StepName=" + String.valueOf(currentStep).replaceAll("[^a-zA-Z0-9]", "_") + "_" +
                 dateNow().replaceAll("[^a-zA-Z0-9]", "_") );
     }
 
