@@ -14,7 +14,7 @@ public class Hooks {
 
     @BeforeStep
     public void beforeStep() {
-        System.out.println("Step Armazenado Print: " + test.Step());
+        System.out.println("Step Armazenado Print: " + test.getStepText());
     }
 
 }

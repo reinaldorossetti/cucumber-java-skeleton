@@ -7,7 +7,7 @@ public class BaseClassStep implements ConcurrentEventListener {
 
     private static String testDescription;
 
-    public String Step() {
+    public String getStepText() {
         return testDescription;
     }
 
