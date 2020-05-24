@@ -3,7 +3,7 @@ Feature: Belly
    @cukesY
   Scenario: a few cukes, mass in BDD.
     Given I have 42 cukes in my belly
-    When I wait 1 hour
+    When I wait 1.30 hour
     Then my belly should "growl"
 
    @cukesX

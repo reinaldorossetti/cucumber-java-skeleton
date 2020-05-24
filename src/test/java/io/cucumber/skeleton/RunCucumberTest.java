@@ -6,10 +6,14 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
+/**
+ *
+ */
+
 @RunWith(Cucumber.class)
-@CucumberOptions(strict = true, plugin = {
+@CucumberOptions(strict = true, glue="io.cucumber.skeleton.Features.Steps", features = "src/test/java/io/cucumber/skeleton/Features", plugin = {
         "pretty",
-        "io.cucumber.skeleton.StepsDefinition.BaseClassStep",
+        "io.cucumber.skeleton.Features.Steps.BaseClassStep",
         "html:target/cucumber",
         "json:target_json/cucumber.json",
 })

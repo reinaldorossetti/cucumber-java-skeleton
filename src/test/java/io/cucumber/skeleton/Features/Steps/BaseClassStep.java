@@ -1,33 +1,30 @@
-package io.cucumber.skeleton.StepsDefinition;
+package io.cucumber.skeleton.Features.Steps;
 
-import io.cucumber.java.Status;
 import io.cucumber.plugin.ConcurrentEventListener;
-import io.cucumber.plugin.event.EventHandler;
-import io.cucumber.plugin.event.EventPublisher;
-import io.cucumber.plugin.event.TestRunFinished;
-import io.cucumber.plugin.event.TestRunStarted;
-
-import java.util.ArrayList;
-import java.util.List;
+import io.cucumber.plugin.event.*;
 
 public class BaseClassStep implements ConcurrentEventListener {
 
-    public static int value = 0;
-    public static List<String> listOfString = new ArrayList<String>();
+    private static String testDescription;
 
-    public Integer getCountTest(){
-        return value = value + 1;
-    }
-
-    public ArrayList addItem(String item1, Status item2){
-        listOfString.add(item1 + " => " + item2);
-        return (ArrayList) listOfString;
+    public String Step() {
+        return testDescription;
     }
 
     @Override
     public void setEventPublisher(EventPublisher eventPublisher) {
         eventPublisher.registerHandlerFor(TestRunStarted.class, setup);
         eventPublisher.registerHandlerFor(TestRunFinished.class, teardown);
+
+        eventPublisher.registerHandlerFor(TestStepStarted.class, new EventHandler<TestStepStarted>() {
+            @Override
+            public void receive(TestStepStarted event) {
+                if (event.getTestStep() instanceof PickleStepTestStep) {
+                    final PickleStepTestStep test_step = (PickleStepTestStep) event.getTestStep();
+                    testDescription = test_step.getStep().getText();
+                }
+            }
+        });
     }
 
     private EventHandler<TestRunStarted> setup = event -> {
@@ -45,4 +42,5 @@ public class BaseClassStep implements ConcurrentEventListener {
     private void afterAll() {
         System.out.println("in after all");
     }
+
 }
