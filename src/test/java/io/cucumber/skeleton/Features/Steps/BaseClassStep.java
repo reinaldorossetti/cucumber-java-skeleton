@@ -6,16 +6,12 @@ import io.cucumber.plugin.event.*;
 public class BaseClassStep implements ConcurrentEventListener {
 
     private static String testDescription;
-
     public String getStepText() {
         return testDescription;
     }
 
     @Override
     public void setEventPublisher(EventPublisher eventPublisher) {
-        eventPublisher.registerHandlerFor(TestRunStarted.class, setup);
-        eventPublisher.registerHandlerFor(TestRunFinished.class, teardown);
-
         eventPublisher.registerHandlerFor(TestStepStarted.class, new EventHandler<TestStepStarted>() {
             @Override
             public void receive(TestStepStarted event) {
@@ -26,21 +22,4 @@ public class BaseClassStep implements ConcurrentEventListener {
             }
         });
     }
-
-    private EventHandler<TestRunStarted> setup = event -> {
-        beforeAll();
-    };
-
-    private void beforeAll() {
-        System.out.println("in before all");
-    }
-
-    private EventHandler<TestRunFinished> teardown = event -> {
-        afterAll();
-    };
-
-    private void afterAll() {
-        System.out.println("in after all");
-    }
-
 }
