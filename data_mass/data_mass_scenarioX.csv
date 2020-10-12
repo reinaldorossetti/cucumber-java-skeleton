@@ -1,3 +1,4 @@
-@cukesX, 45, 7, growl
-@cukesN, 45, 7, potato
-@cukesY, 42, 1, growl
+@cukesPassed, 45, 7, growl
+@cukesFlaky, 42, 1, growl
+@cukesFailed, 45, 7, potato
+@cukesBroken, 42, 1, growl

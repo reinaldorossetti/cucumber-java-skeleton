@@ -1,10 +1,10 @@
 Feature: Belly
 
-   @cukesY
-  Scenario: a few cukes, mass in BDD
+   @cukesFlaky
+   Scenario: Test Flaky
     Given I have 42 cukes in my belly
     When I wait 1.30 hour
-    Then my belly should "growl"
+    Then my belly should growl
 
   @cukesBroken
   Scenario: Broken test
@@ -12,14 +12,14 @@ Feature: Belly
     When I wait 1.30 hour
     Then my belly should crash
 
-  @cukesN
-  Scenario: a few cukes, mass in BDD
+  @cukesFailed
+  Scenario: Failed test
     Given I have 42 cukes in my belly
     When I wait 1.30 hour
     Then my belly should "growl"
 
-   @cukesX
-  Scenario: a few cukes X, mass in CSV
+   @cukesPassed
+  Scenario: Passed test
     Given I have X cukes in my belly
     When I wait X hour
     Then my belly should X

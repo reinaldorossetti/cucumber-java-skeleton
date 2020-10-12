@@ -9,6 +9,7 @@ import io.cucumber.skeleton.suport.ReaderCSV;
 import org.junit.Assert;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Stepdefs {
 
@@ -39,5 +40,13 @@ public class Stepdefs {
     @Then("my belly should {string}")
     public void my_belly_should_growl(String string) {
         Assert.assertEquals(string, valores_da_massa.get(3));
+    }
+
+    @Then("my belly should growl")
+    public void my_belly_should_growl() {
+        final String[] list = {"growl","cry"};
+        Random random = new Random();
+        int index = random.nextInt(list.length);
+        Assert.assertEquals(list[index], valores_da_massa.get(3));
     }
 }
