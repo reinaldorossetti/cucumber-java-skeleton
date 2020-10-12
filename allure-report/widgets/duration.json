@@ -1,0 +1,21 @@
+[ {
+  "uid" : "1c2896e799d3fd9a",
+  "name" : "a few cukes, mass in BDD",
+  "time" : {
+    "start" : 1602518524392,
+    "stop" : 1602518524426,
+    "duration" : 34
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2284ad5d3e1afbb",
+  "name" : "a few cukes X, mass in CSV",
+  "time" : {
+    "start" : 1602518524506,
+    "stop" : 1602518524516,
+    "duration" : 10
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

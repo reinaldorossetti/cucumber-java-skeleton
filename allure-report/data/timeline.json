@@ -1,0 +1,39 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "notebook-rei",
+    "children" : [ {
+      "name" : "2280@notebook-rei.main(1)",
+      "children" : [ {
+        "name" : "a few cukes X, mass in CSV",
+        "uid" : "2284ad5d3e1afbb",
+        "parentUid" : "dd0ea540c5d1a1c6a1a03dd3de981135",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602518524506,
+          "stop" : 1602518524516,
+          "duration" : 10
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "a few cukes, mass in BDD",
+        "uid" : "1c2896e799d3fd9a",
+        "parentUid" : "dd0ea540c5d1a1c6a1a03dd3de981135",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602518524392,
+          "stop" : 1602518524426,
+          "duration" : 34
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "dd0ea540c5d1a1c6a1a03dd3de981135"
+    } ],
+    "uid" : "c99cc56b6313a286be3c662a52710470"
+  } ]
+}

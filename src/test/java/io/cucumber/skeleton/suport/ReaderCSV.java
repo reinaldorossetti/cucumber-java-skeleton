@@ -1,7 +1,8 @@
 package io.cucumber.skeleton.suport;
 
-import java.io.Reader;
 import com.opencsv.CSVReader;
+
+import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -22,7 +23,7 @@ public class ReaderCSV {
                 if (nextRecord[0].equalsIgnoreCase(CT)){
                     for (String cell : nextRecord) {
                         //System.out.print(cell + ",");
-                        list.add(cell);
+                        list.add(cell.replaceAll("\\p{Blank}",""));
                     }
                 }
             }

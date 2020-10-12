@@ -1,0 +1,240 @@
+{
+  "uid" : "2284ad5d3e1afbb",
+  "name" : "a few cukes X, mass in CSV",
+  "fullName" : "Belly: a few cukes X, mass in CSV",
+  "historyId" : "492fca9ae1529722d9976ccefa1a40fc",
+  "time" : {
+    "start" : 1602518524506,
+    "stop" : 1602518524516,
+    "duration" : 10
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "io.cucumber.skeleton.features.Steps.StepdefsX.doSomethingBefore(io.cucumber.java.Scenario)",
+    "time" : {
+      "start" : 1602518524506,
+      "stop" : 1602518524507,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given  I have X cukes in my belly",
+      "time" : {
+        "start" : 1602518524508,
+        "stop" : 1602518524512,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "When  I wait X hour",
+      "time" : {
+        "start" : 1602518524513,
+        "stop" : 1602518524514,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Then  my belly should X",
+      "time" : {
+        "start" : 1602518524514,
+        "stop" : 1602518524515,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 3
+  },
+  "afterStages" : [ {
+    "name" : "io.cucumber.skeleton.features.Steps.Hooks.beforeStep()",
+    "time" : {
+      "start" : 1602518524507,
+      "stop" : 1602518524508,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "io.cucumber.skeleton.features.Steps.Hooks.afterStep()",
+    "time" : {
+      "start" : 1602518524512,
+      "stop" : 1602518524513,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "io.cucumber.skeleton.features.Steps.Hooks.beforeStep()",
+    "time" : {
+      "start" : 1602518524513,
+      "stop" : 1602518524513,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "io.cucumber.skeleton.features.Steps.Hooks.afterStep()",
+    "time" : {
+      "start" : 1602518524514,
+      "stop" : 1602518524514,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "io.cucumber.skeleton.features.Steps.Hooks.beforeStep()",
+    "time" : {
+      "start" : 1602518524514,
+      "stop" : 1602518524514,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "io.cucumber.skeleton.features.Steps.Hooks.afterStep()",
+    "time" : {
+      "start" : 1602518524515,
+      "stop" : 1602518524515,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "io.cucumber.skeleton.features.Steps.Hooks.afterScenario(io.cucumber.java.Scenario)",
+    "time" : {
+      "start" : 1602518524515,
+      "stop" : 1602518524516,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "cukesX"
+  }, {
+    "name" : "host",
+    "value" : "notebook-rei"
+  }, {
+    "name" : "thread",
+    "value" : "2280@notebook-rei.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Belly"
+  }, {
+    "name" : "story",
+    "value" : "a few cukes X, mass in CSV"
+  }, {
+    "name" : "suite",
+    "value" : "Belly"
+  }, {
+    "name" : "testClass",
+    "value" : "a few cukes X, mass in CSV"
+  }, {
+    "name" : "framework",
+    "value" : "cucumber4jvm"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "gherkin_uri",
+    "value" : "file:///C:/Users/reiload/cucumber-java-skeleton/src/test/java/io/cucumber/skeleton/features/belly.feature"
+  }, {
+    "name" : "package",
+    "value" : "src.test.java.io.cucumber.skeleton.features.belly_feature.Belly"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "cukesX" ]
+  },
+  "source" : "2284ad5d3e1afbb.json",
+  "parameterValues" : [ ]
+}

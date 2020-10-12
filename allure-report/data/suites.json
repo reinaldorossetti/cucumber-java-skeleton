@@ -1,0 +1,35 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Belly",
+    "children" : [ {
+      "name" : "a few cukes, mass in BDD",
+      "uid" : "1c2896e799d3fd9a",
+      "parentUid" : "6051b88cbbe84bac6d95f6f3287cac90",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602518524392,
+        "stop" : 1602518524426,
+        "duration" : 34
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "a few cukes X, mass in CSV",
+      "uid" : "2284ad5d3e1afbb",
+      "parentUid" : "6051b88cbbe84bac6d95f6f3287cac90",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602518524506,
+        "stop" : 1602518524516,
+        "duration" : 10
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "6051b88cbbe84bac6d95f6f3287cac90"
+  } ]
+}
