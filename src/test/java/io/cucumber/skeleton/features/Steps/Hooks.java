@@ -1,4 +1,4 @@
-package io.cucumber.skeleton.Features.Steps;
+package io.cucumber.skeleton.features.Steps;
 
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;

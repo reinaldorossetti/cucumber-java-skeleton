@@ -11,11 +11,13 @@ import org.junit.runner.RunWith;
  */
 
 @RunWith(Cucumber.class)
-@CucumberOptions(strict = true, glue="io.cucumber.skeleton.Features.Steps", features = "src/test/java/io/cucumber/skeleton/Features", plugin = {
+@CucumberOptions(strict = true, glue="io.cucumber.skeleton.features.Steps", features = "src/test/java/io/cucumber/skeleton/features", plugin = {
         "pretty",
-        "io.cucumber.skeleton.Features.Steps.BaseClassStep",
+        "io.cucumber.skeleton.features.Steps.BaseClassStep",
+        "io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm",
         "html:target/cucumber",
         "json:target_json/cucumber.json",
+
 })
 public class RunCucumberTest {
     @BeforeClass
