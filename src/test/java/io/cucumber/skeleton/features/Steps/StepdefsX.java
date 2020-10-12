@@ -42,4 +42,14 @@ public class StepdefsX {
     public void my_belly_should_growl() {
         System.out.println(valores_da_massa.get(3));
     }
+
+    @Then("my belly should crash")
+    public void my_belly_should_crash() throws IllegalAccessException {
+        try{
+            throw new IllegalAccessException("crash teste");
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+            throw new IllegalAccessException("crash teste");
+        }
+    }
 }
