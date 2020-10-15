@@ -1,3 +1,5 @@
 "Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
-"","Belly","a few cukes, mass in BDD","0","0","1","0","0"
-"","Belly","a few cukes X, mass in CSV","0","0","1","0","0"
+"","Belly","Passed test","0","0","1","0","0"
+"","Belly","Test Flaky","1","0","0","0","0"
+"","Belly","Failed test","1","0","0","0","0"
+"","Belly","Broken test","0","1","0","0","0"

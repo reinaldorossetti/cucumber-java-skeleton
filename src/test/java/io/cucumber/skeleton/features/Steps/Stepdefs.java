@@ -39,7 +39,7 @@ public class Stepdefs {
 
     @Then("my belly should {string}")
     public void my_belly_should_growl(String string) {
-        Assert.assertEquals(string, valores_da_massa.get(3));
+        Assert. assertEquals(string, valores_da_massa.get(3));
     }
 
     @Then("my belly should growl")

@@ -1,21 +1,21 @@
 {
-  "uid" : "2284ad5d3e1afbb",
-  "name" : "a few cukes X, mass in CSV",
-  "fullName" : "Belly: a few cukes X, mass in CSV",
-  "historyId" : "492fca9ae1529722d9976ccefa1a40fc",
+  "uid" : "196e777715c7a2e5",
+  "name" : "Passed test",
+  "fullName" : "Belly: Passed test",
+  "historyId" : "abac1fc8ba8d0e939124b63ef4a181f3",
   "time" : {
-    "start" : 1602518524506,
-    "stop" : 1602518524516,
-    "duration" : 10
+    "start" : 1602732650173,
+    "stop" : 1602732650181,
+    "duration" : 8
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "io.cucumber.skeleton.features.Steps.StepdefsX.doSomethingBefore(io.cucumber.java.Scenario)",
+    "name" : "io.cucumber.skeleton.features.Steps.Stepdefs.doSomethingBefore(io.cucumber.java.Scenario)",
     "time" : {
-      "start" : 1602518524506,
-      "stop" : 1602518524507,
+      "start" : 1602732650173,
+      "stop" : 1602732650174,
       "duration" : 1
     },
     "status" : "passed",
@@ -24,17 +24,32 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "io.cucumber.skeleton.features.Steps.StepdefsX.doSomethingBefore(io.cucumber.java.Scenario)",
+    "time" : {
+      "start" : 1602732650174,
+      "stop" : 1602732650175,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
       "name" : "Given  I have X cukes in my belly",
       "time" : {
-        "start" : 1602518524508,
-        "stop" : 1602518524512,
-        "duration" : 4
+        "start" : 1602732650176,
+        "stop" : 1602732650177,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -42,13 +57,13 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "When  I wait X hour",
       "time" : {
-        "start" : 1602518524513,
-        "stop" : 1602518524514,
+        "start" : 1602732650177,
+        "stop" : 1602732650178,
         "duration" : 1
       },
       "status" : "passed",
@@ -57,14 +72,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Then  my belly should X",
       "time" : {
-        "start" : 1602518524514,
-        "stop" : 1602518524515,
-        "duration" : 1
+        "start" : 1602732650179,
+        "stop" : 1602732650179,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -72,22 +87,22 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : true,
-    "stepsCount" : 3
+    "stepsCount" : 3,
+    "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "io.cucumber.skeleton.features.Steps.Hooks.beforeStep()",
     "time" : {
-      "start" : 1602518524507,
-      "stop" : 1602518524508,
-      "duration" : 1
+      "start" : 1602732650175,
+      "stop" : 1602732650175,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -95,14 +110,14 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   }, {
     "name" : "io.cucumber.skeleton.features.Steps.Hooks.afterStep()",
     "time" : {
-      "start" : 1602518524512,
-      "stop" : 1602518524513,
-      "duration" : 1
+      "start" : 1602732650177,
+      "stop" : 1602732650177,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -110,13 +125,13 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   }, {
     "name" : "io.cucumber.skeleton.features.Steps.Hooks.beforeStep()",
     "time" : {
-      "start" : 1602518524513,
-      "stop" : 1602518524513,
+      "start" : 1602732650177,
+      "stop" : 1602732650177,
       "duration" : 0
     },
     "status" : "passed",
@@ -125,13 +140,13 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   }, {
     "name" : "io.cucumber.skeleton.features.Steps.Hooks.afterStep()",
     "time" : {
-      "start" : 1602518524514,
-      "stop" : 1602518524514,
+      "start" : 1602732650178,
+      "stop" : 1602732650178,
       "duration" : 0
     },
     "status" : "passed",
@@ -140,13 +155,13 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   }, {
     "name" : "io.cucumber.skeleton.features.Steps.Hooks.beforeStep()",
     "time" : {
-      "start" : 1602518524514,
-      "stop" : 1602518524514,
+      "start" : 1602732650178,
+      "stop" : 1602732650178,
       "duration" : 0
     },
     "status" : "passed",
@@ -155,13 +170,13 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   }, {
     "name" : "io.cucumber.skeleton.features.Steps.Hooks.afterStep()",
     "time" : {
-      "start" : 1602518524515,
-      "stop" : 1602518524515,
+      "start" : 1602732650180,
+      "stop" : 1602732650180,
       "duration" : 0
     },
     "status" : "passed",
@@ -170,13 +185,13 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   }, {
     "name" : "io.cucumber.skeleton.features.Steps.Hooks.afterScenario(io.cucumber.java.Scenario)",
     "time" : {
-      "start" : 1602518524515,
-      "stop" : 1602518524516,
+      "start" : 1602732650180,
+      "stop" : 1602732650181,
       "duration" : 1
     },
     "status" : "passed",
@@ -185,30 +200,30 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "labels" : [ {
     "name" : "tag",
-    "value" : "cukesX"
+    "value" : "cukesPassed"
   }, {
     "name" : "host",
     "value" : "notebook-rei"
   }, {
     "name" : "thread",
-    "value" : "2280@notebook-rei.main(1)"
+    "value" : "22616@notebook-rei.main(1)"
   }, {
     "name" : "feature",
     "value" : "Belly"
   }, {
     "name" : "story",
-    "value" : "a few cukes X, mass in CSV"
+    "value" : "Passed test"
   }, {
     "name" : "suite",
     "value" : "Belly"
   }, {
     "name" : "testClass",
-    "value" : "a few cukes X, mass in CSV"
+    "value" : "Passed test"
   }, {
     "name" : "framework",
     "value" : "cucumber4jvm"
@@ -233,8 +248,8 @@
     "severity" : "normal",
     "retries" : [ ],
     "categories" : [ ],
-    "tags" : [ "cukesX" ]
+    "tags" : [ "cukesPassed" ]
   },
-  "source" : "2284ad5d3e1afbb.json",
+  "source" : "196e777715c7a2e5.json",
   "parameterValues" : [ ]
 }

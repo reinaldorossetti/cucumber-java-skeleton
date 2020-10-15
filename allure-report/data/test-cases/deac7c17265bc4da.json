@@ -1,22 +1,24 @@
 {
-  "uid" : "1c2896e799d3fd9a",
-  "name" : "a few cukes, mass in BDD",
-  "fullName" : "Belly: a few cukes, mass in BDD",
-  "historyId" : "487cb07b1670bf1189fe7c0deba73842",
+  "uid" : "deac7c17265bc4da",
+  "name" : "Failed test",
+  "fullName" : "Belly: Failed test",
+  "historyId" : "6c73e1876cf8c61189795f79740d5446",
   "time" : {
-    "start" : 1602518524392,
-    "stop" : 1602518524426,
-    "duration" : 34
+    "start" : 1602732650157,
+    "stop" : 1602732650167,
+    "duration" : 10
   },
-  "status" : "passed",
+  "status" : "failed",
+  "statusMessage" : "expected:<[growl]> but was:<[potato]>",
+  "statusTrace" : "org.junit.ComparisonFailure: expected:<[growl]> but was:<[potato]>\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat io.cucumber.skeleton.features.Steps.Stepdefs.my_belly_should_growl(Stepdefs.java:42)\r\n\tat ✽.my belly should \"growl\"(file:///C:/Users/reiload/cucumber-java-skeleton/src/test/java/io/cucumber/skeleton/features/belly.feature:19)\r\n",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "io.cucumber.skeleton.features.Steps.StepdefsX.doSomethingBefore(io.cucumber.java.Scenario)",
+    "name" : "io.cucumber.skeleton.features.Steps.Stepdefs.doSomethingBefore(io.cucumber.java.Scenario)",
     "time" : {
-      "start" : 1602518524394,
-      "stop" : 1602518524408,
-      "duration" : 14
+      "start" : 1602732650157,
+      "stop" : 1602732650158,
+      "duration" : 1
     },
     "status" : "passed",
     "steps" : [ ],
@@ -24,46 +26,33 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "io.cucumber.skeleton.features.Steps.StepdefsX.doSomethingBefore(io.cucumber.java.Scenario)",
+    "time" : {
+      "start" : 1602732650158,
+      "stop" : 1602732650159,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "testStage" : {
-    "status" : "passed",
+    "status" : "failed",
+    "statusMessage" : "expected:<[growl]> but was:<[potato]>",
+    "statusTrace" : "org.junit.ComparisonFailure: expected:<[growl]> but was:<[potato]>\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat io.cucumber.skeleton.features.Steps.Stepdefs.my_belly_should_growl(Stepdefs.java:42)\r\n\tat ✽.my belly should \"growl\"(file:///C:/Users/reiload/cucumber-java-skeleton/src/test/java/io/cucumber/skeleton/features/belly.feature:19)\r\n",
     "steps" : [ {
       "name" : "Given  I have 42 cukes in my belly",
       "time" : {
-        "start" : 1602518524411,
-        "stop" : 1602518524416,
-        "duration" : 5
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
-    }, {
-      "name" : "When  I wait 1.30 hour",
-      "time" : {
-        "start" : 1602518524418,
-        "stop" : 1602518524420,
-        "duration" : 2
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
-    }, {
-      "name" : "Then  my belly should \"growl\"",
-      "time" : {
-        "start" : 1602518524421,
-        "stop" : 1602518524422,
+        "start" : 1602732650160,
+        "stop" : 1602732650161,
         "duration" : 1
       },
       "status" : "passed",
@@ -72,21 +61,53 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "When  I wait 1.30 hour",
+      "time" : {
+        "start" : 1602732650162,
+        "stop" : 1602732650163,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Then  my belly should \"growl\"",
+      "time" : {
+        "start" : 1602732650164,
+        "stop" : 1602732650165,
+        "duration" : 1
+      },
+      "status" : "failed",
+      "statusMessage" : "expected:<[growl]> but was:<[potato]>",
+      "statusTrace" : "org.junit.ComparisonFailure: expected:<[growl]> but was:<[potato]>\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat io.cucumber.skeleton.features.Steps.Stepdefs.my_belly_should_growl(Stepdefs.java:42)\r\n\tat ✽.my belly should \"growl\"(file:///C:/Users/reiload/cucumber-java-skeleton/src/test/java/io/cucumber/skeleton/features/belly.feature:19)\r\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : true,
-    "stepsCount" : 3
+    "stepsCount" : 3,
+    "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "io.cucumber.skeleton.features.Steps.Hooks.beforeStep()",
     "time" : {
-      "start" : 1602518524408,
-      "stop" : 1602518524409,
+      "start" : 1602732650159,
+      "stop" : 1602732650160,
       "duration" : 1
     },
     "status" : "passed",
@@ -95,14 +116,14 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   }, {
     "name" : "io.cucumber.skeleton.features.Steps.Hooks.afterStep()",
     "time" : {
-      "start" : 1602518524417,
-      "stop" : 1602518524418,
-      "duration" : 1
+      "start" : 1602732650161,
+      "stop" : 1602732650161,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -110,28 +131,13 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   }, {
     "name" : "io.cucumber.skeleton.features.Steps.Hooks.beforeStep()",
     "time" : {
-      "start" : 1602518524418,
-      "stop" : 1602518524418,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
-  }, {
-    "name" : "io.cucumber.skeleton.features.Steps.Hooks.afterStep()",
-    "time" : {
-      "start" : 1602518524420,
-      "stop" : 1602518524421,
+      "start" : 1602732650161,
+      "stop" : 1602732650162,
       "duration" : 1
     },
     "status" : "passed",
@@ -140,28 +146,13 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
-  }, {
-    "name" : "io.cucumber.skeleton.features.Steps.Hooks.beforeStep()",
-    "time" : {
-      "start" : 1602518524421,
-      "stop" : 1602518524421,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   }, {
     "name" : "io.cucumber.skeleton.features.Steps.Hooks.afterStep()",
     "time" : {
-      "start" : 1602518524422,
-      "stop" : 1602518524422,
+      "start" : 1602732650163,
+      "stop" : 1602732650163,
       "duration" : 0
     },
     "status" : "passed",
@@ -170,13 +161,43 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "io.cucumber.skeleton.features.Steps.Hooks.beforeStep()",
+    "time" : {
+      "start" : 1602732650163,
+      "stop" : 1602732650163,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "io.cucumber.skeleton.features.Steps.Hooks.afterStep()",
+    "time" : {
+      "start" : 1602732650165,
+      "stop" : 1602732650165,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
   }, {
     "name" : "io.cucumber.skeleton.features.Steps.Hooks.afterScenario(io.cucumber.java.Scenario)",
     "time" : {
-      "start" : 1602518524422,
-      "stop" : 1602518524423,
+      "start" : 1602732650165,
+      "stop" : 1602732650166,
       "duration" : 1
     },
     "status" : "passed",
@@ -185,30 +206,30 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "labels" : [ {
     "name" : "tag",
-    "value" : "cukesY"
+    "value" : "cukesFailed"
   }, {
     "name" : "host",
     "value" : "notebook-rei"
   }, {
     "name" : "thread",
-    "value" : "2280@notebook-rei.main(1)"
+    "value" : "22616@notebook-rei.main(1)"
   }, {
     "name" : "feature",
     "value" : "Belly"
   }, {
     "name" : "story",
-    "value" : "a few cukes, mass in BDD"
+    "value" : "Failed test"
   }, {
     "name" : "suite",
     "value" : "Belly"
   }, {
     "name" : "testClass",
-    "value" : "a few cukes, mass in BDD"
+    "value" : "Failed test"
   }, {
     "name" : "framework",
     "value" : "cucumber4jvm"
@@ -232,9 +253,13 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ ],
-    "categories" : [ ],
-    "tags" : [ "cukesY" ]
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "cukesFailed" ]
   },
-  "source" : "1c2896e799d3fd9a.json",
+  "source" : "deac7c17265bc4da.json",
   "parameterValues" : [ ]
 }

@@ -4,12 +4,12 @@
     "uid" : "6051b88cbbe84bac6d95f6f3287cac90",
     "name" : "Belly",
     "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
+      "failed" : 2,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 2
+      "total" : 4
     }
   } ]
 }

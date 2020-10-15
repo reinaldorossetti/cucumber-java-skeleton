@@ -1,5 +1,64 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected:<[cry]> but was:<[growl]>",
+      "children" : [ {
+        "name" : "Test Flaky",
+        "uid" : "ec7e32a2e5416df2",
+        "parentUid" : "9502e7433bf67be8748470c9ca2cfff2",
+        "status" : "failed",
+        "time" : {
+          "start" : 1602732649986,
+          "stop" : 1602732650042,
+          "duration" : 56
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9502e7433bf67be8748470c9ca2cfff2"
+    }, {
+      "name" : "expected:<[growl]> but was:<[potato]>",
+      "children" : [ {
+        "name" : "Failed test",
+        "uid" : "deac7c17265bc4da",
+        "parentUid" : "9b7c09b658755b0534fa47aa851eedd7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1602732650157,
+          "stop" : 1602732650167,
+          "duration" : 10
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9b7c09b658755b0534fa47aa851eedd7"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "crash teste",
+      "children" : [ {
+        "name" : "Broken test",
+        "uid" : "7b9d06c484b12f32",
+        "parentUid" : "789d9918ab10d43f0c712205cd775063",
+        "status" : "broken",
+        "time" : {
+          "start" : 1602732650124,
+          "stop" : 1602732650138,
+          "duration" : 14
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "789d9918ab10d43f0c712205cd775063"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }

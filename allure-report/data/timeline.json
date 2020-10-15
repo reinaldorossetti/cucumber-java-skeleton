@@ -4,35 +4,61 @@
   "children" : [ {
     "name" : "notebook-rei",
     "children" : [ {
-      "name" : "2280@notebook-rei.main(1)",
+      "name" : "22616@notebook-rei.main(1)",
       "children" : [ {
-        "name" : "a few cukes X, mass in CSV",
-        "uid" : "2284ad5d3e1afbb",
-        "parentUid" : "dd0ea540c5d1a1c6a1a03dd3de981135",
-        "status" : "passed",
+        "name" : "Test Flaky",
+        "uid" : "ec7e32a2e5416df2",
+        "parentUid" : "92e687e21fd6af47cf8e2c56441173ab",
+        "status" : "failed",
         "time" : {
-          "start" : 1602518524506,
-          "stop" : 1602518524516,
+          "start" : 1602732649986,
+          "stop" : 1602732650042,
+          "duration" : 56
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Failed test",
+        "uid" : "deac7c17265bc4da",
+        "parentUid" : "92e687e21fd6af47cf8e2c56441173ab",
+        "status" : "failed",
+        "time" : {
+          "start" : 1602732650157,
+          "stop" : 1602732650167,
           "duration" : 10
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "a few cukes, mass in BDD",
-        "uid" : "1c2896e799d3fd9a",
-        "parentUid" : "dd0ea540c5d1a1c6a1a03dd3de981135",
+        "name" : "Passed test",
+        "uid" : "196e777715c7a2e5",
+        "parentUid" : "92e687e21fd6af47cf8e2c56441173ab",
         "status" : "passed",
         "time" : {
-          "start" : 1602518524392,
-          "stop" : 1602518524426,
-          "duration" : 34
+          "start" : 1602732650173,
+          "stop" : 1602732650181,
+          "duration" : 8
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Broken test",
+        "uid" : "7b9d06c484b12f32",
+        "parentUid" : "92e687e21fd6af47cf8e2c56441173ab",
+        "status" : "broken",
+        "time" : {
+          "start" : 1602732650124,
+          "stop" : 1602732650138,
+          "duration" : 14
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "dd0ea540c5d1a1c6a1a03dd3de981135"
+      "uid" : "92e687e21fd6af47cf8e2c56441173ab"
     } ],
     "uid" : "c99cc56b6313a286be3c662a52710470"
   } ]

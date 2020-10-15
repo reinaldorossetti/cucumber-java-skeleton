@@ -4,39 +4,73 @@
   "children" : [ {
     "name" : "Belly",
     "children" : [ {
-      "name" : "a few cukes, mass in BDD",
+      "name" : "Test Flaky",
       "children" : [ {
-        "name" : "a few cukes, mass in BDD",
-        "uid" : "1c2896e799d3fd9a",
-        "parentUid" : "13e2a906391db3d2498a875a14dfb589",
-        "status" : "passed",
+        "name" : "Test Flaky",
+        "uid" : "ec7e32a2e5416df2",
+        "parentUid" : "1711b988c448ddd095e833173ce2df84",
+        "status" : "failed",
         "time" : {
-          "start" : 1602518524392,
-          "stop" : 1602518524426,
-          "duration" : 34
+          "start" : 1602732649986,
+          "stop" : 1602732650042,
+          "duration" : 56
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "13e2a906391db3d2498a875a14dfb589"
+      "uid" : "1711b988c448ddd095e833173ce2df84"
     }, {
-      "name" : "a few cukes X, mass in CSV",
+      "name" : "Broken test",
       "children" : [ {
-        "name" : "a few cukes X, mass in CSV",
-        "uid" : "2284ad5d3e1afbb",
-        "parentUid" : "23dfd9dd65d9ea3f836167dc25a39435",
-        "status" : "passed",
+        "name" : "Broken test",
+        "uid" : "7b9d06c484b12f32",
+        "parentUid" : "4c509a95c803332d797fcd2bc24ec2da",
+        "status" : "broken",
         "time" : {
-          "start" : 1602518524506,
-          "stop" : 1602518524516,
+          "start" : 1602732650124,
+          "stop" : 1602732650138,
+          "duration" : 14
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4c509a95c803332d797fcd2bc24ec2da"
+    }, {
+      "name" : "Failed test",
+      "children" : [ {
+        "name" : "Failed test",
+        "uid" : "deac7c17265bc4da",
+        "parentUid" : "710841fb545e671fa82fe654434a5f55",
+        "status" : "failed",
+        "time" : {
+          "start" : 1602732650157,
+          "stop" : 1602732650167,
           "duration" : 10
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "23dfd9dd65d9ea3f836167dc25a39435"
+      "uid" : "710841fb545e671fa82fe654434a5f55"
+    }, {
+      "name" : "Passed test",
+      "children" : [ {
+        "name" : "Passed test",
+        "uid" : "196e777715c7a2e5",
+        "parentUid" : "0a5667f19e0ac736b81f25932018a9ee",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602732650173,
+          "stop" : 1602732650181,
+          "duration" : 8
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0a5667f19e0ac736b81f25932018a9ee"
     } ],
     "uid" : "b4e4e8e027f0b92cf5e4f5cf61e4b130"
   } ]

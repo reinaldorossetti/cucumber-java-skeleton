@@ -4,27 +4,53 @@
   "children" : [ {
     "name" : "Belly",
     "children" : [ {
-      "name" : "a few cukes, mass in BDD",
-      "uid" : "1c2896e799d3fd9a",
+      "name" : "Test Flaky",
+      "uid" : "ec7e32a2e5416df2",
       "parentUid" : "6051b88cbbe84bac6d95f6f3287cac90",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1602518524392,
-        "stop" : 1602518524426,
-        "duration" : 34
+        "start" : 1602732649986,
+        "stop" : 1602732650042,
+        "duration" : 56
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
-      "name" : "a few cukes X, mass in CSV",
-      "uid" : "2284ad5d3e1afbb",
+      "name" : "Broken test",
+      "uid" : "7b9d06c484b12f32",
+      "parentUid" : "6051b88cbbe84bac6d95f6f3287cac90",
+      "status" : "broken",
+      "time" : {
+        "start" : 1602732650124,
+        "stop" : 1602732650138,
+        "duration" : 14
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Failed test",
+      "uid" : "deac7c17265bc4da",
+      "parentUid" : "6051b88cbbe84bac6d95f6f3287cac90",
+      "status" : "failed",
+      "time" : {
+        "start" : 1602732650157,
+        "stop" : 1602732650167,
+        "duration" : 10
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Passed test",
+      "uid" : "196e777715c7a2e5",
       "parentUid" : "6051b88cbbe84bac6d95f6f3287cac90",
       "status" : "passed",
       "time" : {
-        "start" : 1602518524506,
-        "stop" : 1602518524516,
-        "duration" : 10
+        "start" : 1602732650173,
+        "stop" : 1602732650181,
+        "duration" : 8
       },
       "flaky" : false,
       "newFailed" : false,

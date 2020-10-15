@@ -1,3 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Oct 12 13:02:04 BRT 2020","Mon Oct 12 13:02:04 BRT 2020","34","","Belly","","a few cukes, mass in BDD","","a few cukes, mass in BDD",""
-"passed","Mon Oct 12 13:02:04 BRT 2020","Mon Oct 12 13:02:04 BRT 2020","10","","Belly","","a few cukes X, mass in CSV","","a few cukes X, mass in CSV",""
+"passed","Thu Oct 15 00:30:50 BRT 2020","Thu Oct 15 00:30:50 BRT 2020","8","","Belly","","Passed test","","Passed test",""
+"failed","Thu Oct 15 00:30:49 BRT 2020","Thu Oct 15 00:30:50 BRT 2020","56","","Belly","","Test Flaky","","Test Flaky",""
+"failed","Thu Oct 15 00:30:50 BRT 2020","Thu Oct 15 00:30:50 BRT 2020","10","","Belly","","Failed test","","Failed test",""
+"broken","Thu Oct 15 00:30:50 BRT 2020","Thu Oct 15 00:30:50 BRT 2020","14","","Belly","","Broken test","","Broken test",""

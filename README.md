@@ -147,6 +147,12 @@ Report will be generated into temp folder. Web server with results will start.
 ```
 mvn allure:report
 ```
+Allure allure-commandline:
+
+https://docs.qameta.io/allure/#_commandline
+```
+allure generate target/allure-results --clean
+```
 Report will be generated tо directory: target/site/allure-maven/index.htm
 
 ## Project Structure
