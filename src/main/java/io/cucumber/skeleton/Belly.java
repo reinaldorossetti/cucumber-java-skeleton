@@ -1,11 +1,14 @@
 package io.cucumber.skeleton;
 
 public class Belly {
+    
     public void eat(int cukes) {
     }
-
+    
+    // define o tipo da variavel
     private static String varMSG = "Error";
 
+    // retorna o valor
     public static String getVar() {
         return Belly.varMSG;
     }
@@ -21,7 +24,7 @@ public class Belly {
         }
     }
 
-    //If you do not want to change the var ever then do not include this
+    // seta o valor
     public static void setVar(String var) {
         Belly.varMSG = var;
     }
