@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class StepdefsX {
 
     ArrayList<String> valores_da_massa;
+    Belly belly = new Belly();
 
     @Before
     public void doSomethingBefore(Scenario scenario) throws Exception {
@@ -29,7 +30,6 @@ public class StepdefsX {
 
     @Given("I have X cukes in my belly")
     public void I_have_cukes_in_my_belly() {
-        Belly belly = new Belly();
         belly.eat(Integer.parseInt(valores_da_massa.get(1).trim()));
     }
 
@@ -45,11 +45,7 @@ public class StepdefsX {
 
     @Then("my belly should crash")
     public void my_belly_should_crash() throws IllegalAccessException {
-        try{
-            throw new IllegalAccessException("crash teste");
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-            throw new IllegalAccessException("crash teste");
-        }
+        belly.failTestException();
+        throw new IllegalAccessException(Belly.getVar());
     }
 }
