@@ -13,6 +13,7 @@ public class Belly {
         return Belly.varMSG;
     }
 
+    // gerando uma falha de "Index 5 out of bounds for length 4"
     public Boolean failTestException() throws IllegalAccessException {
         try{
             int num[] = {1, 2, 3, 4};
